@@ -9,9 +9,28 @@
 
 /* Variable */
 :root{
+    --md: 768px;
+    --lg: 1440px;
     --inter: 'Inter', sans-serif;
     --poppins: 'Playfair Display', serif;
     --playfair: 'Poppins', sans-serif;
     --darkblue: #094B72;
     --thin-sky: #F2F7FF;
+}
+
+/* Common Style */
+.container{
+    max-width: 320px;
+    background-color: #094B72;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 650px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container{
+        max-width: 1110px;
+    }
 }
