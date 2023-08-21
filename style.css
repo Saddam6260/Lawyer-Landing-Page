@@ -8,14 +8,16 @@
 }
 
 /* Variable */
-:root{
-    --md: 768px;
-    --lg: 1440px;
+:root {
     --inter: 'Inter', sans-serif;
     --poppins: 'Playfair Display', serif;
     --playfair: 'Poppins', sans-serif;
+    --mdardblue: #004D7B;
     --darkblue: #094B72;
+    --thinblue: #E7F6FF;
     --thin-sky: #F2F7FF;
+    --thin-gray: #F4F5F7;
+    --dark-gray: #4F4F4F;
 }
 
 /* Common Style */
