@@ -1,17 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap");
 
-/* Reset */
+/*** Reset ***/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variable */
+/*** Global Style ***/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*** Variable ***/
 :root {
   --inter: "Inter", sans-serif;
-  --poppins: "Playfair Display", serif;
-  --playfair: "Poppins", sans-serif;
+  --playfair: "Playfair Display", serif;
+  --poppins: "Poppins", sans-serif;
+  --darkoliv: #0F6E8C;
   --mdblue: #004d7b;
   --darkblue: #094b72;
   --thinblue: #e7f6ff;
@@ -20,7 +29,7 @@
   --dark-gray: #4f4f4f;
 }
 
-/* Common Style */
+/*** Common Style ***/
 .container {
   max-width: 320px;
   margin: 0 auto;
@@ -37,7 +46,72 @@
   }
 }
 
-/**** Footer ****/
+/*** About ***/
+#about{
+  background-color: var(--darkblue);
+  padding: 91px 0px;
+}
+#about .container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.large-logo-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: -18px;
+}
+.large-logo-wrap p{
+  font-family: var(--poppins);
+  font-size: 22px;
+  color: var(--thin-gray);
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 1.5px;
+}
+.large-logo{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.large-logo p{
+  font-family: var(--poppins);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--darkoliv);
+}
+.link-wrap{
+  display: flex;
+  column-gap: 30px;
+}
+.link-wrap ul{
+  width: 160px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 12px;
+}
+.link-wrap ul li p, a{
+  color: var(--thin-gray);
+  font-family: var(--inter);
+}
+.link-wrap ul li p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.link-wrap ul li a{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*** Footer ***/
 footer {
   background-color: var(--mdblue);
 }
@@ -54,21 +128,21 @@ footer {
     font-size: 14px;
     color: var(--thin-gray); 
 }
-.foot_social_wrap{
+.social_wrap{
     display: flex;
     flex-flow: row wrap;
     column-gap: 16px;
 }
-.foot_social_wrap div{
+.social_wrap div{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--darkoliv);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.foot_social_wrap div a{
+.social_wrap div a{
     color: white;
     font-size: 12px;
 }
