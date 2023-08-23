@@ -52,6 +52,56 @@ a{
     max-width: 1110px;
   }
 }
+
+/*** Count That Matter ***/
+#count-that-matter {
+  background: url(./images/count-that-matter-bg.png) center no-repeat;
+  background-size: cover;
+  padding: 55px 0px;
+}
+.count-content{
+  text-align: center;
+  margin-bottom: 48px;
+}
+.count-content h1{
+  font-weight: 900;
+  color: white;
+}
+.count-content p{
+  color: white;
+  font-size: 18px;
+  font-family: var(--poppins);
+  font-weight: 400;
+  margin-top: 8px;
+}
+.count-items{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.count-items .item{
+  border-right: 2px solid var(--darkoliv);
+  padding: 0px 15px;
+  text-align: center;
+  width: 255px;
+}
+.count-items .item:last-child{
+  border-right: none;
+}
+.count-items .item h1{
+  font-family: var(--poppins);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  color: white;
+}
+.count-items .item p{
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+}
 /*** Complex Question ***/
 #complex-question{
   padding: 36px 0px 40px 0px;
