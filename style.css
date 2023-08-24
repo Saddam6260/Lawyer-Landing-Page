@@ -62,23 +62,23 @@ a {
 }
 
 /*** Header ***/
-header{
+header {
   padding: 32px 0px;
 }
-header .container{
+header .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-header .logo-wrap{
+header .logo-wrap {
   display: flex;
   column-gap: 13px;
   justify-content: center;
   align-items: center;
   font-size: 20px;
 }
-header .logo-wrap .logo{
+header .logo-wrap .logo {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -90,35 +90,83 @@ header .logo-wrap .logo{
   font-family: var(--poppins);
   font-weight: 700;
 }
-header .logo-wrap p{
+header .logo-wrap p {
   color: var(--darkblue);
   font-family: var(--poppins);
   font-weight: 700;
 }
 /* header menu */
-.menuber{
+.menuber {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  align-items: center;
+  column-gap: 100px;
 }
-.menuber ul{
+.menuber ul {
   display: flex;
   flex-flow: row wrap;
   column-gap: 56px;
 }
-.menuber ul li a{
+.menuber ul li a {
   color: black;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 1.5px;
 }
-.search-box{
-  width: 145px;
-  text-align: end;
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 }
-.search-box button{
-  border: none;
+.input-search {
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  padding: 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
   outline: none;
-  font-size: 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color: var(--darkblue);
+}
+.input-search::placeholder {
+  color: var(--darkblue);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
   cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 200px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--darkblue);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--darkblue);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 /*** Legalization ***/
 #legalization {
@@ -271,34 +319,34 @@ header .logo-wrap p{
   font-size: 14px;
   line-height: 24px;
 }
-.client .person{
+.client .person {
   display: flex;
   flex-flow: row wrap;
   column-gap: 16px;
   align-items: center;
   justify-content: center;
 }
-.client .person div:last-child{
+.client .person div:last-child {
   text-align: start;
 }
-.client .person div:last-child h5{
+.client .person div:last-child h5 {
   font-family: var(--inter);
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
 }
-.client .person div:last-child p{
+.client .person div:last-child p {
   font-size: 14px;
   font-family: var(--inter);
   font-weight: 400;
   line-height: 24px;
 }
-.person .img-wrap{
+.person .img-wrap {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
-.person .img-wrap img{
+.person .img-wrap img {
   width: 100%;
 }
 
