@@ -95,6 +95,31 @@ header .logo-wrap p{
   font-family: var(--poppins);
   font-weight: 700;
 }
+/* header menu */
+.menuber{
+  display: flex;
+}
+.menuber ul{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 56px;
+}
+.menuber ul li a{
+  color: black;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.search-box{
+  width: 145px;
+  text-align: end;
+}
+.search-box button{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
 /*** Legalization ***/
 #legalization {
   background-color: var(--thin-sky);
