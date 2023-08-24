@@ -222,6 +222,18 @@ a {
 .client .person div:last-child{
   text-align: start;
 }
+.client .person div:last-child h5{
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.client .person div:last-child p{
+  font-size: 14px;
+  font-family: var(--inter);
+  font-weight: 400;
+  line-height: 24px;
+}
 .person .img-wrap{
   width: 56px;
   height: 56px;
