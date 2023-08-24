@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /*** Global Style ***/
 li {
   list-style: none;
@@ -170,7 +172,112 @@ header .logo-wrap p {
 }
 
 /*** Main ***/
-
+main{
+  background-image: url(./images/main-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 52% 100%;
+}
+main .container{
+  display: flex;
+  justify-content: space-between;
+}
+.main-content{
+  margin-top: 64px;
+}
+.resent-job{
+  width: min(100%, 434px);
+  border-radius: 26px;
+  background-color: var(--thinblue);
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  column-gap: 10px;
+}
+.resent-job div{
+  width: 86px;
+  height: 28px;
+  border-radius: 26px;
+  background-color: var(--darkblue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resent-job div p{
+  font-size: 14px;
+}
+.resent-job .new{
+  font-size: 14px;
+  line-height: 36px;
+  color: var(--darkblue);
+  letter-spacing: .5px;
+}
+.main-content h1{
+  display: flex;
+  flex-flow: column wrap;
+  margin: 18px 0px 46px 0px;
+  font-size: 90px;
+  line-height: 120%;
+  letter-spacing: 1.8px;
+  color: var(--darkblue);
+}
+.main-content .main-pera{
+  font-size: 24px;
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 158%;
+}
+.main-content button{
+  width: min(100%, 190px);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--darkblue);
+  margin: 42px 0px 115px 0px;
+}
+.main-content button a{
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  line-height: 140%;
+}
+.main-gray-pera{
+  color: var(--md-gray);
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  margin-bottom: 34px;
+}
+.main-content .logo-wrap{
+  width: min(100%, 238px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-bottom: 47px;
+}
+.main-content .logo-wrap div:nth-child(1) {
+  width: min(100%, 90px);
+}
+.main-content .logo-wrap div:nth-child(2) {
+  width: min(100%, 84px);
+}
+.main-content .logo-wrap div:nth-child(3) {
+  width: min(100%, 122px);
+}
+.main-content .logo-wrap div:nth-child(4) {
+  width: min(100%, 84px);
+}
+.main-content .logo-wrap div img{
+  width: 100%;
+}
 
 /*** Legalization ***/
 #legalization {
