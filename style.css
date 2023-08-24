@@ -101,15 +101,15 @@ a {
   border-radius: 8px;
   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
 }
-.card .img-wrap{
+.card .img-wrap {
   width: 37px;
   height: 37px;
 }
-.card .img-wrap img{
+.card .img-wrap img {
   width: 100%;
   height: 100%;
 }
-.card h3{
+.card h3 {
   font-family: var(--playfair);
   font-size: 22px;
   line-height: 22px;
@@ -117,7 +117,7 @@ a {
   letter-spacing: 0.5px;
   margin: 18px 0px 10px 0px;
 }
-.card p{
+.card p {
   font-size: 14px;
   line-height: 18px;
   text-align: start;
@@ -175,6 +175,61 @@ a {
   color: white;
 }
 
+/*** Testimonials ***/
+#testimonial {
+  background-color: var(--thin-sky);
+  padding: 61px 0px 91px 0px;
+}
+#testimonial h1 {
+  text-align: center;
+  margin-bottom: 51px;
+}
+.client-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 30px;
+}
+.client {
+  width: min(100%, 540px);
+  text-align: center;
+}
+.client-revew {
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+  margin-bottom: 28px;
+}
+.client-revew h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.client-revew p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.client .person{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.client .person div:last-child{
+  text-align: start;
+}
+.person .img-wrap{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.person .img-wrap img{
+  width: 100%;
+}
 /*** Complex Question ***/
 #complex-question {
   padding: 36px 0px 40px 0px;
