@@ -305,6 +305,7 @@ header .logo-wrap p {
   text-align: center;
 }
 .client-revew {
+  position: relative;
   width: 100%;
   height: 220px;
   background-color: white;
@@ -312,6 +313,16 @@ header .logo-wrap p {
   border-radius: 10px;
   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
   margin-bottom: 28px;
+}
+.client-revew::after{
+  content: ' ';
+  width: 24px;
+  height: 24px;
+  bottom: -23px;
+  background-color: white;
+  position: absolute;
+  clip-path: polygon(48% 57%, 0 0, 100% 0);
+  order: -1;
 }
 .client-revew h5 {
   font-size: 18px;
