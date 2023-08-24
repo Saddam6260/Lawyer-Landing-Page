@@ -69,11 +69,12 @@ a {
 #legalization .container {
   display: flex;
   flex-flow: row;
-  column-gap: 52px;
+  column-gap: 60px;
 }
 /* Legalization content */
 .legalization-content {
   min-width: 419px;
+  margin-top: 50px;
 }
 .legalization-content p {
   font-size: 20px;
