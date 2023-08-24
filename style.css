@@ -162,12 +162,16 @@ header .logo-wrap p {
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 .input-search:focus {
-  width: 300px;
+  width: 200px;
   border-radius: 0px;
   background-color: transparent;
   border-bottom: 1px solid var(--darkblue);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
+
+/*** Main ***/
+
+
 /*** Legalization ***/
 #legalization {
   background-color: var(--thin-sky);
