@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+body {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  line-height: 140%;
+}
+
+p {
+  line-height: 140%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+============
+Common Style
+============
+*/
+.container {
+  width: 84%;
+  margin: 0px auto;
+}
+
+.main-heading {
+  font-size: 28px;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.sec-heading {
+  font-size: 28px;
+}
+
+.btn {
+  background-color: #a259ff;
+  padding: 19px 0px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 834px) {
+  .container {
+    width: 82.73%;
+  }
+  .main-heading {
+    font-size: 38px;
+  }
+  .btn {
+    width: initial;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contianer {
+    width: 82.03%;
+  }
+  .main-heading {
+    font-size: 67px;
+    line-height: 110%;
+  }
+  .sec-heading {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
