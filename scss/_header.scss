@@ -1,0 +1,47 @@
+/*======
+header
+======*/
+header {
+  padding: 15px 0px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: none;
+    }
+  }
+}
+
+@include media($md) {
+}
+
+@include media($lg) {
+  header {
+    .container {
+      .show-btn {
+        display: none;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        a {
+          font-size: 16px;
+        }
+        button {
+          padding: 15px 30px;
+          a {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            svg {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

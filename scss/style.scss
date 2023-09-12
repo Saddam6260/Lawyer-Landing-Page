@@ -4,6 +4,8 @@ $background: #2b2b2b;
 $work: "Work Sans";
 $mono: "Space Mono";
 $purple: #a259ff;
+$md: "834px";
+$lg: "1280px";
 
 @mixin media($screen-size) {
   @media only screen and (min-width: $screen-size) {
@@ -39,6 +41,8 @@ ul {
 }
 a {
   text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 /*
@@ -64,8 +68,19 @@ Common Style
   width: 100%;
   border-radius: 20px;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
 
-@include media(834px) {
+  h1 {
+    font-size: 18px;
+    font-family: $mono;
+    font-weight: 700;
+  }
+}
+
+@include media($md) {
   .container {
     width: 82.73%;
   }
@@ -76,7 +91,7 @@ Common Style
     width: initial;
   }
 }
-@include media(1280px) {
+@include media($lg) {
   .contianer {
     width: 82.03%;
   }
@@ -88,4 +103,11 @@ Common Style
     font-size: 38px;
     line-height: 120%;
   }
+  .logo {
+    h1 {
+      font-size: 20px;
+    }
+  }
 }
+
+@import "./_header";

@@ -34,13 +34,14 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
-/*
-============
+/*============
 Common Style
-============
-*/
+============*/
+
 .container {
   width: 84%;
   margin: 0px auto;
@@ -61,6 +62,17 @@ Common Style
   padding: 19px 0px;
   width: 100%;
   border-radius: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+}
+.logo h1 {
+  font-size: 18px;
+  font-family: "Space Mono";
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 834px) {
@@ -85,6 +97,49 @@ Common Style
   .sec-heading {
     font-size: 38px;
     line-height: 120%;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+/*======
+header
+======*/
+
+header {
+  padding: 15px 0px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container ul {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  header .container .show-btn {
+    display: none;
+  }
+  header .container ul {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+  header .container ul a {
+    font-size: 16px;
+  }
+  header .container ul button {
+    padding: 15px 30px;
+  }
+  header .container ul button a {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  header .container ul button a svg {
+    width: 20px;
   }
 }
 
