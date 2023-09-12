@@ -1,0 +1,86 @@
+/*======
+Main
+======*/
+main {
+  padding: 40px 0px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 40px;
+
+    .content:nth-child(1) {
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+    .content:nth-child(2) {
+      .img-wrap {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .card-body {
+        padding: 20px;
+        background-color: $gray;
+        border-radius: 0px 0px 20px 20px;
+        
+        h2{
+          margin-bottom: 10px;
+        }
+        div{
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          img{
+            width: 24px;
+          }
+        }
+      }
+    }
+    .content:nth-child(3) {
+      button{
+        svg{
+          width: 20px;
+        }
+      }
+      .total-count{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .item{
+          h1{
+            font-family: $mono;
+            font-size: 22px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($md) {
+  main {
+    padding: 80px 0px;
+    .container {
+      grid-template-columns: 47.5% 47.8%;
+      grid-template-rows: repeat(2, auto);
+      justify-content: center;
+      column-gap: 4.4%;
+
+      .content:nth-child(3) {
+        margin-top: -110px;
+        button{
+          padding: 12px 50px;
+        }
+        .total-count{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

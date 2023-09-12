@@ -4,6 +4,7 @@ $background: #2b2b2b;
 $work: "Work Sans";
 $mono: "Space Mono";
 $purple: #a259ff;
+$gray: #3B3B3B;
 $md: "834px";
 $lg: "1280px";
 
@@ -62,10 +63,19 @@ Common Style
 .sec-heading {
   font-size: 28px;
 }
+.coomon-pera{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
 .btn {
   background-color: $purple;
-  padding: 19px 0px;
+  padding: 12px 0px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
   border-radius: 20px;
 }
 .logo {
@@ -103,6 +113,10 @@ Common Style
     font-size: 38px;
     line-height: 120%;
   }
+  .common-pera{
+    font-size: 22px;
+    line-height: 160%;
+  }
   .logo {
     h1 {
       font-size: 20px;
@@ -111,3 +125,4 @@ Common Style
 }
 
 @import "./_header";
+@import "./_main";

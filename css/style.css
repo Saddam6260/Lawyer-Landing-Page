@@ -38,10 +38,11 @@ a {
   font-weight: 600;
 }
 
-/*============
+/*
+============
 Common Style
-============*/
-
+============
+*/
 .container {
   width: 84%;
   margin: 0px auto;
@@ -57,10 +58,20 @@ Common Style
   font-size: 28px;
 }
 
+.coomon-pera {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .btn {
   background-color: #a259ff;
-  padding: 19px 0px;
+  padding: 12px 0px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
   border-radius: 20px;
 }
 
@@ -98,6 +109,10 @@ Common Style
     font-size: 38px;
     line-height: 120%;
   }
+  .common-pera {
+    font-size: 22px;
+    line-height: 160%;
+  }
   .logo h1 {
     font-size: 20px;
   }
@@ -105,7 +120,6 @@ Common Style
 /*======
 header
 ======*/
-
 header {
   padding: 15px 0px;
 }
@@ -133,13 +147,79 @@ header .container ul {
   header .container ul button {
     padding: 15px 30px;
   }
-  header .container ul button a {
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
-  }
-  header .container ul button a svg {
+  header .container ul button svg {
     width: 20px;
+  }
+}
+/*======
+Main
+======*/
+main {
+  padding: 40px 0px;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 40px;
+}
+main .container .content:nth-child(1) h1 {
+  margin-bottom: 10px;
+}
+main .container .content:nth-child(2) .img-wrap {
+  width: 100%;
+}
+main .container .content:nth-child(2) .img-wrap img {
+  width: 100%;
+}
+main .container .content:nth-child(2) .card-body {
+  padding: 20px;
+  background-color: #3B3B3B;
+  border-radius: 0px 0px 20px 20px;
+}
+main .container .content:nth-child(2) .card-body h2 {
+  margin-bottom: 10px;
+}
+main .container .content:nth-child(2) .card-body div {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+main .container .content:nth-child(2) .card-body div img {
+  width: 24px;
+}
+main .container .content:nth-child(3) button svg {
+  width: 20px;
+}
+main .container .content:nth-child(3) .total-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+main .container .content:nth-child(3) .total-count .item h1 {
+  font-family: "Space Mono";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 834px) {
+  main {
+    padding: 80px 0px;
+  }
+  main .container {
+    grid-template-columns: 47.5% 47.8%;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    column-gap: 4.4%;
+  }
+  main .container .content:nth-child(3) {
+    margin-top: -110px;
+  }
+  main .container .content:nth-child(3) button {
+    padding: 12px 50px;
+  }
+  main .container .content:nth-child(3) .total-count {
+    margin-top: 20px;
   }
 }
 
