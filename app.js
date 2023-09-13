@@ -1,3 +1,14 @@
+// Top Creators
+let topCreatorsitems = [
+  { img: "./images/Avatar-1.png", heading: "Keepitreal", time: "34.53 ETH" },
+  { img: "./images/avatar-2.png", heading: "DigiLab", time: "34.53 ETH" },
+  { img: "./images/avatar-3.png", heading: "GravityOne", time: "34.53 ETH" },
+  { img: "./images/avatar-4.png", heading: "Juanie", time: "34.53 ETH" },
+  { img: "./images/avatar-5.png", heading: "BlueWhale", time: "34.53 ETH" },
+  { img: "./images/avatar-6.png", heading: "Mr Fox", time: "34.53 ETH" },
+];
+
+// How It Work
 let howItWorkItems = [
   {
     img: "./images/how-it-work-img1.png",
@@ -19,13 +30,36 @@ let howItWorkItems = [
   },
 ];
 
+//How it work
 let howItWork = document.querySelector(".how-it-work-wrapper");
-let container = document.querySelector(".container");
-console.log(howItWork);
+let topCreators = document.querySelector(".top-creators-wrapper");
 
 window.addEventListener("DOMContentLoaded", function () {
-  let displayitem = howItWorkItems.map(function (item) {
+  displayTopCreators(topCreatorsitems);
+  displayHowItWork(howItWorkItems);
+});
 
+displayTopCreators = (topCreatorsitems) => {
+  let displayitem = topCreatorsitems.map(function (item) {
+    return `<div class="item">
+              <div class="img-wrap">
+                <img src=${item.img} alt="" />
+              </div>
+              <div class="content">
+                <h3>${item.heading}</h3>
+                <p>
+                  <span class="total-sale">Total Sales:</span>
+                  <span class="time">${item.time}</span>
+                </p>
+              </div>
+            </div>`;
+  });
+  displayitem = displayitem.join("");
+  topCreators.innerHTML = displayitem;
+};
+
+displayHowItWork = (howItWorkItems) => {
+  let displayitem = howItWorkItems.map(function (item) {
     return `<div class="content">
                 <div class="img-wrap">
                     <img src=${item.img} alt="">
@@ -40,4 +74,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
   displayitem = displayitem.join("");
   howItWork.innerHTML = displayitem;
-});
+};
