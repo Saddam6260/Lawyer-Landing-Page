@@ -39,12 +39,22 @@ Browse Category
   }
 }
 @include media($lg) {
-    #browse-category {
-        padding: 80px 0px;
-        .container {
-          .header-wrap {
-            margin-bottom: 60px;
-          }
+  #browse-category {
+    padding: 80px 0px;
+    .container {
+      .header-wrap {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .brows-category-wrap {
+    .card {
+      .card-body {
+        h5 {
+          font-size: 22px;
         }
-      } 
+      }
+    }
+  }
 }

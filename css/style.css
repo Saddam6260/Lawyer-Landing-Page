@@ -391,7 +391,17 @@ Browse Category
   #browse-category .container .header-wrap {
     margin-bottom: 60px;
   }
+  .brows-category-wrap .card .card-body h5 {
+    font-size: 22px;
+  }
 }
+/*=======
+More NFTs
+=======*/
+#more-nfts {
+  padding: 40px 0px 60px 0px;
+}
+
 /*==========
 How It Work
 ==========*/

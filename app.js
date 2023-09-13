@@ -26,6 +26,28 @@ let browseCategoryItems = [
   { img: "./images/browse-category-img-8.png", categoryName: "Virtual Worlds" },
 ];
 
+// More NFTs
+let moreNftsItems = [
+  {
+    nftImg: "./images/main-img.png",
+    nftName: "Distant Galaxy",
+    nftPersonimg: "./images/nft-person1.png",
+    nftPersonName: "MoonDancer",
+  },
+  {
+    nftImg: "./images/more-nfts-img-2.png",
+    nftName: "Life on Edena",
+    nftPersonimg: "./images/nft-person2.png",
+    nftPersonName: "NebulaKid",
+  },
+  {
+    nftImg: "./images/more-nfts-img-3.png",
+    nftName: "Life on Edena",
+    nftPersonimg: "./images/nft-person3.png",
+    nftPersonName: "Spaceone",
+  },
+];
+
 // How It Work
 let howItWorkItems = [
   {
@@ -52,10 +74,12 @@ let howItWorkItems = [
 let howItWork = document.querySelector(".how-it-work-wrapper");
 let topCreators = document.querySelector(".top-creators-wrapper");
 let browseCategory = document.querySelector(".brows-category-wrap");
+let moreNFTs = document.querySelector(".more-nfts-wrap");
 
 window.addEventListener("DOMContentLoaded", function () {
   displayTopCreators(topCreatorsitems);
   displayBrowseCategory(browseCategoryItems);
+  displayMoreNfts(moreNftsItems);
   displayHowItWork(howItWorkItems);
 });
 
@@ -92,6 +116,37 @@ displayBrowseCategory = (browseCategoryItems) => {
 
   displayitem = displayitem.join("");
   browseCategory.innerHTML = displayitem;
+};
+
+displayMoreNfts = (moreNftsItems) => {
+  displayItem = moreNftsItems.map(function (item) {
+    return `<div class="card">
+              <div class="img-wrap">
+                  <img src=${item.nftImg} alt="">
+              </div>
+              <div class="card-body">
+                <div>
+                    <h5>${item.nftName}</h5>
+                  <div>
+                    <img src=${item.nftPersonimg} alt="">
+                    <p>${item.nftPersonName}</p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <p>price</p>
+                    <span>1.63 ETH</span>
+                  </div>
+                  <div>
+                    <p>Highest Bid</p>
+                    <span>0.33 wETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+  });
+  displayItem = displayItem.join("");
+  moreNFTs.innerHTML = displayItem;
 };
 
 displayHowItWork = (howItWorkItems) => {
