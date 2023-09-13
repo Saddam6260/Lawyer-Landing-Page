@@ -1,0 +1,101 @@
+/*====================
+join our weekly digest
+====================*/
+#join-weekly-digest {
+  padding: 40px 0px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    .img-wrap {
+      width: 100%;
+    }
+    .content {
+      h2 {
+        padding-right: 6px;
+      }
+      p {
+        margin: 10px 0px 40px 0px;
+      }
+      form {
+        div {
+          input {
+            background-color: white;
+            padding-left: 20px;
+            margin-bottom: 16px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($md) {
+  #join-weekly-digest {
+    padding: 40px 0px 80px 0px;
+    .container {
+      align-items: center;
+      grid-template-columns: repeat(2, 47.61%);
+      grid-template-rows: 1fr;
+      column-gap: 30px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      background-color: $gray;
+      .img-wrap {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+      .content {
+        form {
+          div {
+            input {
+              width: 100%;
+            }
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  #join-weekly-digest {
+    .container {
+      grid-template-columns: repeat(2, 45%);
+      column-gap: 80px;
+      padding: 60px;
+      .img-wrap {
+        height: 310px;
+        img {
+          height: 100%;
+        }
+      }
+      .content {
+        form {
+          div {
+            position: relative;
+            width: 100%;
+            input {
+              width: 100%;
+              padding: 16px;
+            }
+            button {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: initial;
+              padding: 16px 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

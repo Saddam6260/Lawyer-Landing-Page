@@ -47,6 +47,9 @@ a {
   color: white;
   font-weight: 600;
 }
+img{
+  width: 100%;
+}
 
 /*
 ============
@@ -138,4 +141,5 @@ Common Style
 
 @import "./_header";
 @import "./_main";
+@import "./_join-our-weekly-digest";
 @import "./_footer";  

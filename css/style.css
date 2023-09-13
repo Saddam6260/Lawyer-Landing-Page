@@ -38,6 +38,10 @@ a {
   font-weight: 600;
 }
 
+img {
+  width: 100%;
+}
+
 /*
 ============
 Common Style
@@ -230,6 +234,88 @@ main .container .content:nth-child(3) .total-count .item h1 {
   }
   main .container .content:nth-child(3) .total-count {
     margin-top: 20px;
+  }
+}
+/*====================
+join our weekly digest
+====================*/
+#join-weekly-digest {
+  padding: 40px 0px;
+}
+#join-weekly-digest .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 30px;
+}
+#join-weekly-digest .container .img-wrap {
+  width: 100%;
+}
+#join-weekly-digest .container .content h2 {
+  padding-right: 6px;
+}
+#join-weekly-digest .container .content p {
+  margin: 10px 0px 40px 0px;
+}
+#join-weekly-digest .container .content form div input {
+  background-color: white;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 834px) {
+  #join-weekly-digest {
+    padding: 40px 0px 80px 0px;
+  }
+  #join-weekly-digest .container {
+    align-items: center;
+    grid-template-columns: repeat(2, 47.61%);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+  }
+  #join-weekly-digest .container .img-wrap {
+    height: 100%;
+  }
+  #join-weekly-digest .container .img-wrap img {
+    height: 100%;
+  }
+  #join-weekly-digest .container .content form div input {
+    width: 100%;
+  }
+  #join-weekly-digest .container .content form div button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #join-weekly-digest .container {
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 80px;
+    padding: 60px;
+  }
+  #join-weekly-digest .container .img-wrap {
+    height: 310px;
+  }
+  #join-weekly-digest .container .img-wrap img {
+    height: 100%;
+  }
+  #join-weekly-digest .container .content form div {
+    position: relative;
+    width: 100%;
+  }
+  #join-weekly-digest .container .content form div input {
+    width: 100%;
+    padding: 16px;
+  }
+  #join-weekly-digest .container .content form div button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: initial;
+    padding: 16px 40px;
   }
 }
 /*=======
