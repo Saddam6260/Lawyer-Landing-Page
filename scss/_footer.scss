@@ -92,10 +92,13 @@ footer {
       .footer-top {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: auto;
-        column-gap: 100px;
         margin-bottom: 30px;
         .content:nth-child(1) {
+          margin-right: 80px;
           width: 240px;
+        }
+        .content:nth-child(2) {
+          margin-right: 107px;
         }
         .content:nth-child(3) {
           p {

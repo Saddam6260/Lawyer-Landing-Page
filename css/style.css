@@ -155,7 +155,7 @@ header .container ul {
     font-size: 16px;
   }
   header .container ul button {
-    padding: 15px 30px;
+    padding: 12px 30px;
   }
   header .container ul button svg {
     width: 20px;
@@ -298,11 +298,14 @@ footer .container .createdby p {
   footer .container .footer-top {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    column-gap: 100px;
     margin-bottom: 30px;
   }
   footer .container .footer-top .content:nth-child(1) {
+    margin-right: 80px;
     width: 240px;
+  }
+  footer .container .footer-top .content:nth-child(2) {
+    margin-right: 107px;
   }
   footer .container .footer-top .content:nth-child(3) p {
     padding-right: 180px;
