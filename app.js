@@ -14,6 +14,18 @@ let topCreatorsitems = [
   { img: "./images/avatar-12.png", heading: "Ghiblier", time: "34.53 ETH" },
 ];
 
+// Browse Categorys
+let browseCategoryItems = [
+  { img: "./images/browse-category-img-1.png", categoryName: "Art" },
+  { img: "./images/browse-category-img-2.png", categoryName: "Collectibles" },
+  { img: "./images/browse-category-img-3.png", categoryName: "Music" },
+  { img: "./images/browse-category-img-4.png", categoryName: "Photography" },
+  { img: "./images/browse-category-img-5.png", categoryName: "Video" },
+  { img: "./images/browse-category-img-6.png", categoryName: "Utility" },
+  { img: "./images/browse-category-img-7.png", categoryName: "Sport" },
+  { img: "./images/browse-category-img-8.png", categoryName: "Virtual Worlds" },
+];
+
 // How It Work
 let howItWorkItems = [
   {
@@ -39,9 +51,11 @@ let howItWorkItems = [
 //How it work
 let howItWork = document.querySelector(".how-it-work-wrapper");
 let topCreators = document.querySelector(".top-creators-wrapper");
+let browseCategory = document.querySelector(".brows-category-wrap");
 
 window.addEventListener("DOMContentLoaded", function () {
   displayTopCreators(topCreatorsitems);
+  displayBrowseCategory(browseCategoryItems);
   displayHowItWork(howItWorkItems);
 });
 
@@ -62,6 +76,22 @@ displayTopCreators = (topCreatorsitems) => {
   });
   displayitem = displayitem.join("");
   topCreators.innerHTML = displayitem;
+};
+
+displayBrowseCategory = (browseCategoryItems) => {
+  let displayitem = browseCategoryItems.map(function (item) {
+    return `<div class="card">
+              <div class="card-img">
+                  <img src=${item.img} alt="" />
+              </div>
+              <div class="card-body">
+                <h5>${item.categoryName}</h5>
+              </div>
+          </div>`;
+  });
+
+  displayitem = displayitem.join("");
+  browseCategory.innerHTML = displayitem;
 };
 
 displayHowItWork = (howItWorkItems) => {

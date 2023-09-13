@@ -349,6 +349,49 @@ Top Creators
     width: 120px;
   }
 }
+/*=============
+Browse Category
+=============*/
+#browse-category {
+  padding: 40px 0px;
+}
+#browse-category .container .header-wrap {
+  margin-bottom: 40px;
+}
+
+.brows-category-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+.brows-category-wrap .card {
+  border-radius: 20px;
+  background-color: #3B3B3B;
+}
+.brows-category-wrap .card .card-body {
+  padding: 20px;
+}
+.brows-category-wrap .card .card-body h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 834px) {
+  .brows-category-wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #browse-category {
+    padding: 80px 0px;
+  }
+  #browse-category .container .header-wrap {
+    margin-bottom: 60px;
+  }
+}
 /*==========
 How It Work
 ==========*/
