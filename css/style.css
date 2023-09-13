@@ -236,6 +236,92 @@ main .container .content:nth-child(3) .total-count .item h1 {
     margin-top: 20px;
   }
 }
+/*==========
+How It Work
+==========*/
+#how-it-work {
+  padding: 40px 0px;
+}
+#how-it-work .container .header-wrap {
+  margin-bottom: 40px;
+}
+#how-it-work .container .header-wrap h2 {
+  margin-bottom: 10px;
+}
+
+.how-it-work-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+}
+.how-it-work-wrapper .content {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+}
+.how-it-work-wrapper .content .img-wrap {
+  width: 36.36%;
+}
+.how-it-work-wrapper .content .img-wrap img {
+  width: 100%;
+}
+.how-it-work-wrapper .content .description {
+  width: 56.3%;
+}
+.how-it-work-wrapper .content .description h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.how-it-work-wrapper .content .description p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media only screen and (min-width: 834px) {
+  .how-it-work-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+  }
+  .how-it-work-wrapper .content {
+    flex-flow: column wrap;
+    row-gap: 30px;
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+  }
+  .how-it-work-wrapper .content .img-wrap {
+    width: 63.33%;
+  }
+  .how-it-work-wrapper .content .description {
+    width: 100%;
+  }
+  .how-it-work-wrapper .content .description h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .how-it-work-wrapper .content .description p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #how-it-work {
+    padding: 40px 0px 80px 0px;
+  }
+  .how-it-work-wrapper .content {
+    padding: 30;
+  }
+  .how-it-work-wrapper .content .description h5 {
+    font-size: 22px;
+  }
+  .how-it-work-wrapper .content .description p {
+    font-size: 16px;
+  }
+}
 /*====================
 join our weekly digest
 ====================*/

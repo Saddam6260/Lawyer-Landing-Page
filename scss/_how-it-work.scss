@@ -1,0 +1,100 @@
+/*==========
+How It Work
+==========*/
+#how-it-work {
+  padding: 40px 0px;
+  .container {
+    .header-wrap {
+      margin-bottom: 40px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.how-it-work-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+
+  .content {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: $gray;
+    border-radius: 20px;
+
+    .img-wrap {
+      width: 36.36%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .description {
+      width: 56.3%;
+
+      h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+@include media($md) {
+  .how-it-work-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+
+    .content {
+      flex-flow: column wrap;
+      row-gap: 30px;
+      text-align: center;
+      padding: 20px 20px 30px 20px;
+
+      .img-wrap {
+        width: 63.33%;
+      }
+      .description {
+        width: 100%;
+
+        h5 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  #how-it-work {
+    padding: 40px 0px 80px 0px;
+  }
+  .how-it-work-wrapper {
+    .content {
+      padding: 30;
+      .description {
+        h5 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
