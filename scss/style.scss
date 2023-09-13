@@ -67,6 +67,7 @@ Common Style
 }
 .sec-heading {
   font-size: 28px;
+  margin-bottom: 10px;
 }
 .content-heading{
   font-size: 22px;
@@ -141,6 +142,7 @@ Common Style
 
 @import "./_header";
 @import "./_main";
+@import "./_top-creators";
 @import "./_how-it-work";
 @import "./_join-our-weekly-digest";
 @import "./_footer";  

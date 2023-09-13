@@ -6,6 +6,12 @@ let topCreatorsitems = [
   { img: "./images/avatar-4.png", heading: "Juanie", time: "34.53 ETH" },
   { img: "./images/avatar-5.png", heading: "BlueWhale", time: "34.53 ETH" },
   { img: "./images/avatar-6.png", heading: "Mr Fox", time: "34.53 ETH" },
+  { img: "./images/avatar-7.png", heading: "Shroomie", time: "34.53 ETH" },
+  { img: "./images/avatar-8.png", heading: "Robotica", time: "34.53 ETH" },
+  { img: "./images/avatar-9.png", heading: "RustyRobot", time: "34.53 ETH" },
+  { img: "./images/avatar-10.png", heading: "animakid", time: "34.53 ETH" },
+  { img: "./images/avatar-11.png", heading: "Dotgu", time: "34.53 ETH" },
+  { img: "./images/avatar-12.png", heading: "Ghiblier", time: "34.53 ETH" },
 ];
 
 // How It Work
