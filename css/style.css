@@ -58,7 +58,13 @@ Common Style
   font-size: 28px;
 }
 
-.coomon-pera {
+.content-heading {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.common-pera {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -73,6 +79,10 @@ Common Style
   justify-content: center;
   column-gap: 12px;
   border-radius: 20px;
+}
+.btn a {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .logo {
@@ -220,6 +230,85 @@ main .container .content:nth-child(3) .total-count .item h1 {
   }
   main .container .content:nth-child(3) .total-count {
     margin-top: 20px;
+  }
+}
+/*=======
+Footer
+=======*/
+footer {
+  padding: 40px 0px;
+  background-color: #3B3B3B;
+}
+footer .container p,
+footer .container li a {
+  color: #cccccc;
+}
+footer .container .footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #858584;
+}
+footer .container .footer-top .content {
+  display: flex;
+  flex-flow: column;
+  row-gap: 20px;
+}
+footer .container .footer-top .content:nth-child(1) .social-wrap {
+  margin-top: -5px;
+  display: flex;
+  column-gap: 10px;
+}
+footer .container .footer-top .content:nth-child(3) form div input {
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px 20px;
+  border: 1px solid #858584;
+  font-size: 16px;
+}
+footer .container .createdby p {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 834px) {
+  footer .container .footer-top .content:nth-child(3) form div {
+    width: 430px;
+    position: relative;
+  }
+  footer .container .footer-top .content:nth-child(3) form div input {
+    margin-bottom: 0px;
+    padding: 16px 20px;
+  }
+  footer .container .footer-top .content:nth-child(3) form div button {
+    padding: 16px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  footer .container p,
+  footer .container li a {
+    font-size: 16px;
+  }
+  footer .container .footer-top {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    column-gap: 100px;
+    margin-bottom: 30px;
+  }
+  footer .container .footer-top .content:nth-child(1) {
+    width: 240px;
+  }
+  footer .container .footer-top .content:nth-child(3) p {
+    padding-right: 180px;
+  }
+  footer .container .footer-top .content:nth-child(3) form div input {
+    font-size: 16px;
   }
 }
 
