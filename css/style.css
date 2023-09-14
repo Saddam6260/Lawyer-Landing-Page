@@ -237,6 +237,122 @@ main .container .content:nth-child(3) .total-count .item h1 {
     margin-top: 20px;
   }
 }
+/*=================
+Trending Collection
+=================*/
+#trending-collection {
+  padding: 40px 0px;
+}
+#trending-collection .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 40px;
+}
+#trending-collection .container button {
+  background-color: black;
+  border: 1px solid #a259ff;
+  padding: 16px 0px;
+}
+
+.trending-collection-wrap {
+  display: flex;
+  flex-flow: column;
+}
+.trending-collection-wrap .card:nth-child(2) {
+  display: none;
+}
+.trending-collection-wrap .card:nth-child(3) {
+  display: none;
+}
+.trending-collection-wrap .card .card-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.trending-collection-wrap .card .card-img .image:nth-child(1) {
+  grid-column: 1/4;
+  grid-template-rows: 1/2;
+}
+.trending-collection-wrap .card .card-img .image:nth-child(2) {
+  grid-column: 1/2;
+  grid-template-rows: 2/3;
+}
+.trending-collection-wrap .card .card-img .image:nth-child(3) {
+  grid-column: 2/3;
+  grid-template-rows: 2/3;
+}
+.trending-collection-wrap .card .card-img .more-img {
+  grid-column: 3/4;
+  grid-template-rows: 2/3;
+  background-color: #a259ff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Space Mono";
+}
+.trending-collection-wrap .card .card-body h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.trending-collection-wrap .card .card-body div {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.trending-collection-wrap .card .card-body div .logo {
+  width: 24px;
+}
+.trending-collection-wrap .card .card-body div p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 834px) {
+  #trending-collection .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  #trending-collection .container .heading-wrap {
+    order: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #trending-collection .container button {
+    order: 2;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 247px;
+    margin-left: auto;
+    padding: 16px 0px;
+  }
+  #trending-collection .container .trending-collection-wrap {
+    order: 3;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .trending-collection-wrap {
+    flex-flow: row;
+    column-gap: 30px;
+  }
+  .trending-collection-wrap .card:nth-child(2) {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #trending-collection .container {
+    row-gap: 60px;
+  }
+  .trending-collection-wrap .card:nth-child(3) {
+    display: block;
+  }
+}
 /*==========
 Top Creators
 ==========*/
@@ -311,6 +427,7 @@ Top Creators
     grid-column: 2/3;
     grid-row: 1/2;
     width: 247px;
+    padding: 19px;
     margin-left: auto;
   }
   #top-creators .container .top-creators-wrapper {
@@ -481,7 +598,8 @@ More NFTs
     order: 2;
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 187px;
+    width: 247px;
+    padding: 15px 0px;
     margin-left: auto;
   }
   #more-nfts .container .more-nfts-wrap {

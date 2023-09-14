@@ -1,3 +1,28 @@
+// Trending Collection
+let trendingCollectionItems = [
+  {
+    img1: "./images/trending-collection1.png",
+    img2: "./images/trending-collection1.1.png",
+    img3: "./images/trending-collection1.2.png",
+    collectionName: "DSGN Animals",
+    logoimg: "./images/trending-collection1.1.png",
+  },
+  {
+    img1: "./images/trending-collection2.png",
+    img2: "./images/trending-collection2.1.png",
+    img3: "./images/trending-collection2.2.png",
+    collectionName: "Magic Mushrooms",
+    logoimg: "./images/avatar-7.png",
+  },
+  {
+    img1: "./images/trending-collection3.png",
+    img2: "./images/trending-collection3.1.png",
+    img3: "./images/trending-collection3.2.png",
+    collectionName: "Disco Machines",
+    logoimg: "./images/avatar-9.png",
+  },
+];
+
 // Top Creators
 let topCreatorsitems = [
   { img: "./images/Avatar-1.png", heading: "Keepitreal", time: "34.53 ETH" },
@@ -70,17 +95,51 @@ let howItWorkItems = [
   },
 ];
 
+let trendingCollection = document.querySelector(".trending-collection-wrap");
 let howItWork = document.querySelector(".how-it-work-wrapper");
 let topCreators = document.querySelector(".top-creators-wrapper");
 let browseCategory = document.querySelector(".brows-category-wrap");
 let moreNFTs = document.querySelector(".more-nfts-wrap");
 
 window.addEventListener("DOMContentLoaded", function () {
+  displayTrendingCollections(trendingCollectionItems);
   displayTopCreators(topCreatorsitems);
   displayBrowseCategory(browseCategoryItems);
   displayMoreNfts(moreNftsItems);
   displayHowItWork(howItWorkItems);
 });
+
+displayTrendingCollections = (trendingCollectionItems) => {
+  let displayItem = trendingCollectionItems.map(function (item) {
+    return `<div class="card">
+              <div class="card-img">
+                <div class="image">
+                  <img src=${item.img1} alt="" />
+                </div>
+                <div class="image">
+                  <img src=${item.img2} alt="" />
+                </div>
+                <div class="image">
+                  <img src=${item.img3} alt="" />
+                </div>
+                <div class="more-img">1025</div>
+              </div>
+
+              <div class="card-body">
+                  <h3>${item.collectionName}</h3>
+                  <div>
+                    <div class="logo">
+                      <img src=${item.logoimg} alt="" />
+                    </div>
+                    <p>MrFox</p>
+                  </div>
+              </div>
+            </div>`;
+  });
+
+  displayItem = displayItem.join("");
+  trendingCollection.innerHTML = displayItem;
+};
 
 displayTopCreators = (topCreatorsitems) => {
   let displayitem = topCreatorsitems.map(function (item) {

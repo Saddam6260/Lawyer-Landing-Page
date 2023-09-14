@@ -90,7 +90,8 @@ More NFTs
         order: 2;
         grid-column: 2/3;
         grid-row: 1/2;
-        width: 187px;
+        width: 247px;
+        padding: 15px 0px;
         margin-left: auto;
       }
       .more-nfts-wrap {
@@ -125,7 +126,7 @@ More NFTs
   #more-nfts {
     padding: 80px 0px;
     .container {
-        row-gap: 60px;
+      row-gap: 60px;
     }
   }
   .more-nfts-wrap {
@@ -136,4 +137,5 @@ More NFTs
     }
   }
 }
+
 
