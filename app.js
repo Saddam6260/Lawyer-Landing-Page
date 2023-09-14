@@ -29,7 +29,7 @@ let browseCategoryItems = [
 // More NFTs
 let moreNftsItems = [
   {
-    nftImg: "./images/main-img.png",
+    nftImg: "./images/more-nfts-img1.png",
     nftName: "Distant Galaxy",
     nftPersonimg: "./images/nft-person1.png",
     nftPersonName: "MoonDancer",
@@ -70,7 +70,6 @@ let howItWorkItems = [
   },
 ];
 
-//How it work
 let howItWork = document.querySelector(".how-it-work-wrapper");
 let topCreators = document.querySelector(".top-creators-wrapper");
 let browseCategory = document.querySelector(".brows-category-wrap");
@@ -125,14 +124,14 @@ displayMoreNfts = (moreNftsItems) => {
                   <img src=${item.nftImg} alt="">
               </div>
               <div class="card-body">
-                <div>
+                <div class="avatar">
                     <h5>${item.nftName}</h5>
                   <div>
                     <img src=${item.nftPersonimg} alt="">
                     <p>${item.nftPersonName}</p>
                   </div>
                 </div>
-                <div>
+                <div class="price-wrap">
                   <div>
                     <p>price</p>
                     <span>1.63 ETH</span>

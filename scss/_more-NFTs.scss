@@ -1,6 +1,139 @@
 /*=======
 More NFTs
 =======*/
-#more-nfts{
-    padding: 40px 0px 60px 0px;
+#more-nfts {
+  padding: 40px 0px 60px 0px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 40px;
+
+    button {
+      background-color: black;
+      border: 1px solid $purple;
+    }
+  }
 }
+
+.more-nfts-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+
+  .card {
+    background-color: $gray;
+    border-radius: 20px;
+
+    .img-wrap {
+      width: 100%;
+    }
+    .card-body {
+      padding: 20px 20px 25px 20px;
+
+      .avatar {
+        margin-bottom: 25px;
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 140%;
+        }
+        div {
+          display: flex;
+          column-gap: 12px;
+          margin-top: 5px;
+          img {
+            width: 24px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $mono;
+          }
+        }
+      }
+      .price-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          p {
+            margin-bottom: 8px;
+            color: $border;
+          }
+          p,
+          span {
+            font-size: 12px;
+            font-family: $mono;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($md) {
+  #more-nfts {
+    padding: 40px 0px 80px 0px;
+    .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, auto);
+
+      .heading-wrap {
+        order: 1;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      button {
+        order: 2;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 187px;
+        margin-left: auto;
+      }
+      .more-nfts-wrap {
+        order: 3;
+        grid-column: 1/3;
+        grid-row: 2/3;
+      }
+    }
+  }
+  .more-nfts-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+
+    .card:nth-child(3) {
+      display: none;
+    }
+
+    .card {
+      .img-wrap {
+        height: 295px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  #more-nfts {
+    padding: 80px 0px;
+    .container {
+        row-gap: 60px;
+    }
+  }
+  .more-nfts-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    .card:nth-child(3) {
+      display: block;
+    }
+  }
+}
+

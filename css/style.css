@@ -401,7 +401,124 @@ More NFTs
 #more-nfts {
   padding: 40px 0px 60px 0px;
 }
+#more-nfts .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 40px;
+}
+#more-nfts .container button {
+  background-color: black;
+  border: 1px solid #a259ff;
+}
 
+.more-nfts-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+}
+.more-nfts-wrap .card {
+  background-color: #3B3B3B;
+  border-radius: 20px;
+}
+.more-nfts-wrap .card .img-wrap {
+  width: 100%;
+}
+.more-nfts-wrap .card .card-body {
+  padding: 20px 20px 25px 20px;
+}
+.more-nfts-wrap .card .card-body .avatar {
+  margin-bottom: 25px;
+}
+.more-nfts-wrap .card .card-body .avatar h5 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.more-nfts-wrap .card .card-body .avatar div {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 5px;
+}
+.more-nfts-wrap .card .card-body .avatar div img {
+  width: 24px;
+}
+.more-nfts-wrap .card .card-body .avatar div p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Space Mono";
+}
+.more-nfts-wrap .card .card-body .price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.more-nfts-wrap .card .card-body .price-wrap div p {
+  margin-bottom: 8px;
+  color: #858584;
+}
+.more-nfts-wrap .card .card-body .price-wrap div p,
+.more-nfts-wrap .card .card-body .price-wrap div span {
+  font-size: 12px;
+  font-family: "Space Mono";
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 834px) {
+  #more-nfts {
+    padding: 40px 0px 80px 0px;
+  }
+  #more-nfts .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  #more-nfts .container .heading-wrap {
+    order: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #more-nfts .container button {
+    order: 2;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 187px;
+    margin-left: auto;
+  }
+  #more-nfts .container .more-nfts-wrap {
+    order: 3;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .more-nfts-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+  }
+  .more-nfts-wrap .card:nth-child(3) {
+    display: none;
+  }
+  .more-nfts-wrap .card .img-wrap {
+    height: 295px;
+  }
+  .more-nfts-wrap .card .img-wrap img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #more-nfts {
+    padding: 80px 0px;
+  }
+  #more-nfts .container {
+    row-gap: 60px;
+  }
+  .more-nfts-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .more-nfts-wrap .card:nth-child(3) {
+    display: block;
+  }
+}
 /*==========
 How It Work
 ==========*/
