@@ -645,6 +645,63 @@ Magic Mashroom
   position: relative;
   isolation: isolate;
 }
+#magic-mashroom .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 30px;
+}
+#magic-mashroom .container .content div {
+  width: 151px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #3B3B3B;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 30px;
+}
+#magic-mashroom .container .content div img {
+  width: 24px;
+}
+#magic-mashroom .container .content h1 {
+  font-size: 38px;
+}
+#magic-mashroom .container .content .md-btn {
+  display: none;
+}
+#magic-mashroom .container .time-wrap {
+  width: 315px;
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+}
+#magic-mashroom .container .time-wrap .time {
+  display: flex;
+  column-gap: 10px;
+}
+#magic-mashroom .container .time-wrap .time div {
+  display: flex;
+  flex-flow: column;
+}
+#magic-mashroom .container .time-wrap .time div h1 {
+  display: flex;
+  column-gap: 20px;
+  font-family: "Space Mono";
+  font-size: 38px;
+  line-height: 120%;
+}
+#magic-mashroom .container .time-wrap .time div p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+#magic-mashroom .container .sm-btn {
+  background-color: white;
+}
+#magic-mashroom .container .sm-btn a {
+  color: black;
+}
 
 #magic-mashroom::after {
   content: "";
@@ -654,6 +711,34 @@ Magic Mashroom
   background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
 }
 
+@media only screen and (min-width: 834px) {
+  #magic-mashroom {
+    padding: 360px 0px 60px 0px;
+  }
+  #magic-mashroom .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: end;
+    column-gap: 20px;
+  }
+  #magic-mashroom .container .content .md-btn {
+    display: flex;
+    width: 198px;
+    background-color: white;
+    margin-top: 30px;
+  }
+  #magic-mashroom .container .content .md-btn a {
+    color: black;
+  }
+  #magic-mashroom .container .time-wrap {
+    width: 315px;
+    padding: 30px;
+  }
+  #magic-mashroom .container .sm-btn {
+    display: none;
+  }
+}
 /*==========
 How It Work
 ==========*/

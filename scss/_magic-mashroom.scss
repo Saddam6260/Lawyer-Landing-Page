@@ -10,6 +10,67 @@ Magic Mashroom
   position: relative;
 
   isolation: isolate;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 30px;
+    .content {
+      div {
+        width: 151px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: $gray;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        margin-bottom: 30px;
+        img {
+          width: 24px;
+        }
+      }
+      h1 {
+        font-size: 38px;
+      }
+      .md-btn {
+        display: none;
+      }
+    }
+    .time-wrap {
+      width: 315px;
+      border-radius: 20px;
+      padding: 30px;
+      background: rgba(59, 59, 59, 0.5);
+      backdrop-filter: blur(5px);
+      .time {
+        display: flex;
+        column-gap: 10px;
+        div {
+          display: flex;
+          flex-flow: column;
+          h1 {
+            display: flex;
+            column-gap: 20px;
+            font-family: $mono;
+            font-size: 38px;
+            line-height: 120%;
+          }
+          p {
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .sm-btn {
+      background-color: white;
+
+      a {
+        color: black;
+      }
+    }
+  }
 }
 
 #magic-mashroom::after {
@@ -17,5 +78,36 @@ Magic Mashroom
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);  
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+}
+
+@include media($md) {
+  #magic-mashroom {
+    padding: 360px 0px 60px 0px;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: end;
+      column-gap: 20px;
+      .content {
+        .md-btn {
+          display: flex;
+          width: 198px;
+          background-color: white;
+          margin-top: 30px;
+          a {
+            color: black;
+          }
+        }
+      }
+      .time-wrap {
+        width: 315px;
+        padding: 30px;
+      }
+      .sm-btn {
+        display: none;
+      }
+    }
+  }
 }
