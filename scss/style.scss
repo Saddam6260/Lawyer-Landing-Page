@@ -92,7 +92,14 @@ Common Style
   a{
     font-size: 16px;
     font-weight: 600;
+    line-height: 140%
   }
+}
+.black-btn{
+  @extend .btn;
+  background-color: black;
+  border: 1px solid $purple;
+  padding: 16px 0px;
 }
 .logo {
   display: flex;
@@ -115,6 +122,11 @@ Common Style
   }
   .btn {
     width: initial;
+  }
+  .black-btn{
+    width: 247px;
+    padding: 19px 0px;
+    margin-left: auto;
   }
 }
 @include media($lg) {
@@ -146,6 +158,7 @@ Common Style
 @import "./_top-creators";
 @import "./_browse-category";
 @import "./_more-NFTs";
+@import "./_magic-mashroom";
 @import "./_how-it-work";
 @import "./_join-our-weekly-digest";
 @import "./_footer";  

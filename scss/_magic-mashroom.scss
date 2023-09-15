@@ -1,0 +1,21 @@
+/*============
+Magic Mashroom
+============*/
+#magic-mashroom {
+  padding: 120px 0px 40px 0px;
+  background-image: url(../images/trending-collection2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  isolation: isolate;
+}
+
+#magic-mashroom::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);  
+}

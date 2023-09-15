@@ -8,12 +8,6 @@ Trending Collection
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     row-gap: 40px;
-
-    button {
-      background-color: black;
-      border: 1px solid $purple;
-      padding: 16px 0px;
-    }
   }
 }
 
@@ -98,9 +92,6 @@ Trending Collection
         order: 2;
         grid-column: 2/3;
         grid-row: 1/2;
-        width: 247px;
-        margin-left: auto;
-        padding: 16px 0px;
       }
       .trending-collection-wrap {
         order: 3;
