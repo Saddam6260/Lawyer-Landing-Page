@@ -111,3 +111,17 @@ Magic Mashroom
     }
   }
 }
+
+@include media($lg) {
+  #magic-mashroom {
+    padding: 300px 0px 60px 0px;
+
+    .container {
+      .content {
+        h1 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

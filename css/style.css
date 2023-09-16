@@ -77,7 +77,7 @@ Common Style
 
 .btn, .black-btn {
   background-color: #a259ff;
-  padding: 12px 0px;
+  padding: 16px 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -190,43 +190,49 @@ main .container {
   grid-template-rows: repeat(3, auto);
   row-gap: 40px;
 }
-main .container .content:nth-child(1) h1 {
+
+.service-count .count {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.service-count .count div h1 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Space Mono";
+}
+
+.main-content h1 {
   margin-bottom: 10px;
 }
-main .container .content:nth-child(2) .img-wrap {
-  width: 100%;
+.main-content .md-count {
+  display: none;
 }
-main .container .content:nth-child(2) .img-wrap img {
-  width: 100%;
-}
-main .container .content:nth-child(2) .card-body {
-  padding: 20px;
+
+.main-card {
   background-color: #3B3B3B;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 20px;
 }
-main .container .content:nth-child(2) .card-body h2 {
+.main-card .card-body {
+  padding: 20px;
+}
+.main-card .card-body h5 {
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
-main .container .content:nth-child(2) .card-body div {
+.main-card .card-body div {
   display: flex;
   align-items: center;
   column-gap: 12px;
 }
-main .container .content:nth-child(2) .card-body div img {
+.main-card .card-body div img {
   width: 24px;
+  height: 24px;
 }
-main .container .content:nth-child(3) button svg {
-  width: 20px;
-}
-main .container .content:nth-child(3) .total-count {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-main .container .content:nth-child(3) .total-count .item h1 {
-  font-family: "Space Mono";
-  font-size: 22px;
-  font-weight: 700;
+.main-card .card-body div p {
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 834px) {
@@ -234,19 +240,48 @@ main .container .content:nth-child(3) .total-count .item h1 {
     padding: 80px 0px;
   }
   main .container {
-    grid-template-columns: 47.5% 47.8%;
-    grid-template-rows: repeat(2, auto);
-    justify-content: center;
-    column-gap: 4.4%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    column-gap: 30px;
   }
-  main .container .content:nth-child(3) {
-    margin-top: -110px;
+  main .container .sm-count {
+    display: none;
   }
-  main .container .content:nth-child(3) button {
-    padding: 12px 50px;
-  }
-  main .container .content:nth-child(3) .total-count {
+  .main-content .md-count {
+    display: block;
     margin-top: 20px;
+  }
+  .main-content .md-count .btn, .main-content .md-count .black-btn {
+    width: 224px;
+  }
+  .main-content .md-count .count {
+    margin-top: 20px;
+  }
+  .main-content h1 {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .service-count {
+    margin-top: 30px;
+  }
+  .service-count .count {
+    margin-top: 30px;
+    justify-content: start;
+    column-gap: 50px;
+  }
+  .service-count .count div h1 {
+    font-size: 28px;
+  }
+  .service-count .count div p {
+    font-size: 24px;
+  }
+  .main-content .md-count {
+    margin-top: 30px;
+  }
+  .main-content .md-count .count {
+    margin-top: 30px;
   }
 }
 /*=================
@@ -737,6 +772,14 @@ Magic Mashroom
   }
   #magic-mashroom .container .sm-btn {
     display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #magic-mashroom {
+    padding: 300px 0px 60px 0px;
+  }
+  #magic-mashroom .container .content h1 {
+    font-size: 48px;
   }
 }
 /*==========
