@@ -27,6 +27,7 @@ p {
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 ul {
@@ -218,9 +219,6 @@ main .container {
   font-family: "Space Mono";
 }
 
-.main-content h1 {
-  margin-bottom: 10px;
-}
 .main-content .md-count {
   display: none;
 }
@@ -263,9 +261,6 @@ main .container {
   }
   .main-content .md-count .count {
     margin-top: 20px;
-  }
-  .main-content h1 {
-    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
