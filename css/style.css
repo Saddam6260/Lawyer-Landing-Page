@@ -89,7 +89,7 @@ Common Style
 
 .btn, .black-btn {
   background-color: #a259ff;
-  padding: 16px 0px;
+  padding: 17px 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -339,9 +339,7 @@ Trending Collection
   font-weight: 700;
   font-family: "Space Mono";
 }
-.trending-collection-wrap .card .card-body h3 {
-  font-size: 22px;
-  font-weight: 600;
+.trending-collection-wrap .card .card-body h5 {
   margin-bottom: 10px;
 }
 .trending-collection-wrap .card .card-body div {
@@ -349,18 +347,12 @@ Trending Collection
   align-items: center;
   column-gap: 12px;
 }
-.trending-collection-wrap .card .card-body div .logo {
-  width: 24px;
-}
-.trending-collection-wrap .card .card-body div p {
-  font-size: 16px;
-  font-weight: 400;
-}
 
 @media only screen and (min-width: 834px) {
   #trending-collection .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
+    align-items: center;
   }
   #trending-collection .container .heading-wrap {
     order: 1;

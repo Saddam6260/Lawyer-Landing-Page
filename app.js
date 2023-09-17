@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", function () {
   displayHowItWork(howItWorkItems);
 });
 
-displayTrendingCollections = (trendingCollectionItems) => {
+const displayTrendingCollections = (trendingCollectionItems) => {
   let displayItem = trendingCollectionItems.map(function (item) {
     return `<div class="card">
               <div class="card-img">
@@ -126,12 +126,12 @@ displayTrendingCollections = (trendingCollectionItems) => {
               </div>
 
               <div class="card-body">
-                  <h3>${item.collectionName}</h3>
+                  <h5 class="font-22">${item.collectionName}</h5>
                   <div>
                     <div class="logo">
-                      <img src=${item.logoimg} alt="" />
+                      <img class="card-circle-img" src=${item.logoimg} alt="" />
                     </div>
-                    <p>MrFox</p>
+                    <p class="pera-16">MrFox</p>
                   </div>
               </div>
             </div>`;
@@ -141,7 +141,7 @@ displayTrendingCollections = (trendingCollectionItems) => {
   trendingCollection.innerHTML = displayItem;
 };
 
-displayTopCreators = (topCreatorsitems) => {
+const displayTopCreators = (topCreatorsitems) => {
   let displayitem = topCreatorsitems.map(function (item) {
     return `<div class="item">
               <div class="img-wrap">
@@ -160,7 +160,7 @@ displayTopCreators = (topCreatorsitems) => {
   topCreators.innerHTML = displayitem;
 };
 
-displayBrowseCategory = (browseCategoryItems) => {
+const displayBrowseCategory = (browseCategoryItems) => {
   let displayitem = browseCategoryItems.map(function (item) {
     return `<div class="card">
               <div class="card-img">
@@ -176,7 +176,7 @@ displayBrowseCategory = (browseCategoryItems) => {
   browseCategory.innerHTML = displayitem;
 };
 
-displayMoreNfts = (moreNftsItems) => {
+const displayMoreNfts = (moreNftsItems) => {
   displayItem = moreNftsItems.map(function (item) {
     return `<div class="card">
               <div class="img-wrap">
@@ -207,7 +207,7 @@ displayMoreNfts = (moreNftsItems) => {
   moreNFTs.innerHTML = displayItem;
 };
 
-displayHowItWork = (howItWorkItems) => {
+const displayHowItWork = (howItWorkItems) => {
   let displayitem = howItWorkItems.map(function (item) {
     return `<div class="content">
                 <div class="img-wrap">
