@@ -868,6 +868,7 @@ join our weekly digest
   padding: 12px 20px;
   margin-bottom: 16px;
   font-size: 16px;
+  border: 1px solid #858584;
 }
 #join-weekly-digest .container .content form div button {
   padding: 12px 20px;
@@ -894,9 +895,11 @@ join our weekly digest
   }
   #join-weekly-digest .container .content form div input {
     width: 100%;
+    padding: 14px 20px;
   }
   #join-weekly-digest .container .content form div button {
     width: 100%;
+    padding: 14px 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -917,14 +920,14 @@ join our weekly digest
   }
   #join-weekly-digest .container .content form div input {
     width: 100%;
-    padding: 16px;
+    padding: 19px 20px;
   }
   #join-weekly-digest .container .content form div button {
     position: absolute;
     top: 0;
     right: 0;
     width: initial;
-    padding: 16px 40px;
+    padding: 18px 40px;
   }
 }
 /*=======

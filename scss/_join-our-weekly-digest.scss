@@ -25,6 +25,7 @@ join our weekly digest
             padding: 12px 20px;
             margin-bottom: 16px;
             font-size: 16px;
+            border: 1px solid $border;
           }
           button{
             padding: 12px 20px;
@@ -57,9 +58,11 @@ join our weekly digest
           div {
             input {
               width: 100%;
+              padding: 14px 20px;
             }
             button {
               width: 100%;
+              padding: 14px 20px;
             }
           }
         }
@@ -87,14 +90,14 @@ join our weekly digest
             width: 425px;
             input {
               width: 100%;
-              padding: 16px;
+              padding: 19px 20px;
             }
             button {
               position: absolute;
               top: 0;
               right: 0;
               width: initial;
-              padding: 16px 40px;
+              padding: 18px 40px;
             }
           }
         }
