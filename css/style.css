@@ -14,7 +14,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-weight: 600;
   line-height: 140%;
 }
@@ -69,10 +70,20 @@ Common Style
   line-height: 160%;
 }
 
-.common-pera {
+.font-22 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.common-pera, .pera-16 {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
+}
+
+.card-circle-img {
+  width: 24px;
+  height: 24px;
 }
 
 .btn, .black-btn {
@@ -94,7 +105,6 @@ Common Style
 .black-btn {
   background-color: black;
   border: 1px solid #a259ff;
-  padding: 16px 0px;
 }
 
 .logo {
@@ -136,9 +146,13 @@ Common Style
     font-size: 38px;
     line-height: 120%;
   }
-  .common-pera {
+  .common-pera, .pera-16 {
     font-size: 22px;
     line-height: 160%;
+  }
+  .pera-16 {
+    font-size: 16px;
+    line-height: 140%;
   }
   .logo h1 {
     font-size: 20px;
@@ -218,21 +232,12 @@ main .container {
   padding: 20px;
 }
 .main-card .card-body h5 {
-  font-size: 22px;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 .main-card .card-body div {
   display: flex;
   align-items: center;
   column-gap: 12px;
-}
-.main-card .card-body div img {
-  width: 24px;
-  height: 24px;
-}
-.main-card .card-body div p {
-  font-size: 16px;
 }
 
 @media only screen and (min-width: 834px) {

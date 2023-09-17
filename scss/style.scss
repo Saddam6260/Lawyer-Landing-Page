@@ -28,7 +28,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-weight: 600;
   line-height: 140%;
 }
@@ -74,10 +75,21 @@ Common Style
   font-weight: 700;
   line-height: 160%;
 }
+.font-22{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
 .common-pera{
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
+}
+.pera-16{
+  @extend .common-pera;
+}
+.card-circle-img{
+  width: 24px;
+  height: 24px;
 }
 .btn {
   background-color: $purple;
@@ -99,7 +111,6 @@ Common Style
   @extend .btn;
   background-color: black;
   border: 1px solid $purple;
-  padding: 16px 0px;
 }
 .logo {
   display: flex;
@@ -144,6 +155,10 @@ Common Style
   .common-pera{
     font-size: 22px;
     line-height: 160%;
+  }
+  .pera-16{
+    font-size: 16px;
+    line-height: 140%;
   }
   .logo {
     h1 {
