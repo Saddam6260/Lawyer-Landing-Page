@@ -127,10 +127,10 @@ Common Style
   }
   .btn, .black-btn {
     width: initial;
+    padding: 19px 0px;
   }
   .black-btn {
     width: 247px;
-    padding: 19px 0px;
     margin-left: auto;
   }
 }
@@ -186,10 +186,11 @@ header .container ul {
     font-size: 16px;
   }
   header .container ul button {
-    padding: 12px 30px;
+    width: 152px;
   }
   header .container ul button svg {
     width: 20px;
+    height: 20px;
   }
 }
 /*======
