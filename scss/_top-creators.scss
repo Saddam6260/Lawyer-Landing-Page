@@ -36,16 +36,10 @@ Top Creators
       width: 60px;
     }
     .content {
-      h3 {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 5px;
-      }
       p {
         display: flex;
         column-gap: 5px;
-        font-size: 16px;
-
+        
         .total-sale {
           color: $border;
         }

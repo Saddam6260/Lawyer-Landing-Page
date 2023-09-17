@@ -423,15 +423,9 @@ Top Creators
 .top-creators-wrapper .item .img-wrap {
   width: 60px;
 }
-.top-creators-wrapper .item .content h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
 .top-creators-wrapper .item .content p {
   display: flex;
   column-gap: 5px;
-  font-size: 16px;
 }
 .top-creators-wrapper .item .content p .total-sale {
   color: #858584;

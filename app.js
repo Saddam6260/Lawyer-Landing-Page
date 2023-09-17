@@ -148,8 +148,8 @@ const displayTopCreators = (topCreatorsitems) => {
                 <img src=${item.img} alt="" />
               </div>
               <div class="content">
-                <h3>${item.heading}</h3>
-                <p>
+                <h5 class="font-22">${item.heading}</h5>
+                <p class="pera-16">
                   <span class="total-sale">Total Sales:</span>
                   <span class="time">${item.time}</span>
                 </p>
