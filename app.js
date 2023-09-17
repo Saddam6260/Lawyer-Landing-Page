@@ -184,10 +184,10 @@ const displayMoreNfts = (moreNftsItems) => {
               </div>
               <div class="card-body">
                 <div class="avatar">
-                    <h5>${item.nftName}</h5>
+                    <h5 class="font-22">${item.nftName}</h5>
                   <div>
-                    <img src=${item.nftPersonimg} alt="">
-                    <p>${item.nftPersonName}</p>
+                    <img class="card-circle-img" src=${item.nftPersonimg} alt="">
+                    <p class="pera-16">${item.nftPersonName}</p>
                   </div>
                 </div>
                 <div class="price-wrap">

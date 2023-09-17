@@ -8,11 +8,6 @@ More NFTs
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     row-gap: 40px;
-
-    button {
-      background-color: black;
-      border: 1px solid $purple;
-    }
   }
 }
 
@@ -34,21 +29,11 @@ More NFTs
 
       .avatar {
         margin-bottom: 25px;
-        h5 {
-          font-size: 22px;
-          font-weight: 600;
-          line-height: 140%;
-        }
         div {
           display: flex;
           column-gap: 12px;
           margin-top: 5px;
-          img {
-            width: 24px;
-          }
           p {
-            font-size: 16px;
-            font-weight: 400;
             font-family: $mono;
           }
         }
@@ -137,5 +122,3 @@ More NFTs
     }
   }
 }
-
-

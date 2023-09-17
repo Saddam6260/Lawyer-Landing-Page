@@ -22,9 +22,12 @@ join our weekly digest
         div {
           input {
             background-color: white;
-            padding-left: 20px;
+            padding: 12px 20px;
             margin-bottom: 16px;
             font-size: 16px;
+          }
+          button{
+            padding: 12px 20px;
           }
         }
       }

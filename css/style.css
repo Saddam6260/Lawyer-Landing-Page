@@ -49,6 +49,10 @@ img {
 Common Style
 ============
 */
+.sec-padding {
+  padding: 40px 0px;
+}
+
 .container {
   width: 84%;
   margin: 0px auto;
@@ -542,10 +546,6 @@ More NFTs
   grid-template-rows: repeat(3, auto);
   row-gap: 40px;
 }
-#more-nfts .container button {
-  background-color: black;
-  border: 1px solid #a259ff;
-}
 
 .more-nfts-wrap {
   display: grid;
@@ -566,22 +566,12 @@ More NFTs
 .more-nfts-wrap .card .card-body .avatar {
   margin-bottom: 25px;
 }
-.more-nfts-wrap .card .card-body .avatar h5 {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 140%;
-}
 .more-nfts-wrap .card .card-body .avatar div {
   display: flex;
   column-gap: 12px;
   margin-top: 5px;
 }
-.more-nfts-wrap .card .card-body .avatar div img {
-  width: 24px;
-}
 .more-nfts-wrap .card .card-body .avatar div p {
-  font-size: 16px;
-  font-weight: 400;
   font-family: "Space Mono";
 }
 .more-nfts-wrap .card .card-body .price-wrap {
@@ -682,9 +672,6 @@ Magic Mashroom
   align-items: center;
   column-gap: 12px;
   margin-bottom: 30px;
-}
-#magic-mashroom .container .content div img {
-  width: 24px;
 }
 #magic-mashroom .container .content h1 {
   font-size: 38px;
@@ -878,9 +865,12 @@ join our weekly digest
 }
 #join-weekly-digest .container .content form div input {
   background-color: white;
-  padding-left: 20px;
+  padding: 12px 20px;
   margin-bottom: 16px;
   font-size: 16px;
+}
+#join-weekly-digest .container .content form div button {
+  padding: 12px 20px;
 }
 
 @media only screen and (min-width: 834px) {
@@ -975,6 +965,9 @@ footer .container .footer-top .content:nth-child(3) form div input {
   border: 1px solid #858584;
   font-size: 16px;
 }
+footer .container .footer-top .content:nth-child(3) form div button {
+  padding: 12px 20px;
+}
 footer .container .createdby p {
   font-size: 12px;
 }
@@ -986,10 +979,10 @@ footer .container .createdby p {
   }
   footer .container .footer-top .content:nth-child(3) form div input {
     margin-bottom: 0px;
-    padding: 16px 20px;
+    padding: 19px 20px;
   }
   footer .container .footer-top .content:nth-child(3) form div button {
-    padding: 16px 40px;
+    padding: 18px 40px;
     position: absolute;
     top: 0;
     right: 0;
